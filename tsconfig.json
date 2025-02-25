@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "composite": false,
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "preserveWatchOutput": true,
+    "isolatedModules": false,
+    "skipLibCheck": true
+  },
+  "include": ["hooks/**/*.ts"],
+  "exclude": ["node_modules"]
+}
