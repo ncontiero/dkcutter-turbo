@@ -1,0 +1,37 @@
+{
+  "$schema": "https://github.com/dkshs/dkcutter/raw/refs/heads/main/dkcutter-schema.json",
+  "projectName": {
+    "value": "My Awesome Project",
+    "promptMessage": "What is the project name?"
+  },
+  "projectSlug": {
+    "value": "{{ projectName|lower|replace(' ', '-')|trim }}",
+    "promptMessage": "What is the project slug?",
+    "validateRegex": {
+      "regex": "^[A-Za-z][A-Za-z0-9-_]*$",
+      "message": "The project slug must start with a letter and can only contain letters, numbers, hyphens, and underscores"
+    }
+  },
+  "description": {
+    "value": "Behold My Awesome Project!",
+    "promptMessage": "What is the project description?"
+  },
+  "authorName": {
+    "value": "Nicolas Contiero (https://github.com/dkshs)",
+    "promptMessage": "What is the author name?"
+  },
+  "automatedDepsUpdater": {
+    "value": "none",
+    "choices": [
+      { "title": "None", "value": "none" },
+      { "title": "Mend Renovate", "value": "renovate" },
+      { "title": "Github Dependabot", "value": "dependabot" }
+    ],
+    "promptMessage": "What {{ colors.blue('Automated Dependency Updater')}} do you want to use?"
+  },
+  "_pkgManager": "{{ dkcutter.pkgManager }}",
+  "_lintScript": "{{ _pkgManager }} run lint:fix",
+  "_preCommit": "{{ _pkgManager }} run {% if useLintStaged %}pre-commit{% else %}lint:fix{% endif %}",
+  "_commitMsg": "{{ _pkgManager }} run commitlint",
+  "_ciInstall": "{{ _pkgManager }} {% if _pkgManager != 'npm' %}install{% else %}ci{% endif %}{% if _pkgManager == 'yarn' %} --frozen-lockfile{% endif %}"
+}

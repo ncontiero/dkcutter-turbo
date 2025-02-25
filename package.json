@@ -16,7 +16,7 @@
     "lint:fix": "pnpm lint --fix",
     "check": "pnpm lint && pnpm typecheck",
     "commitlint": "commitlint --edit",
-    "pre-commit": "lint-staged",
+    "pre-commit": "lint-staged -c ./package.json",
     "prepare": "husky"
   },
   "dependencies": {
@@ -26,10 +26,17 @@
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
     "@dkshs/eslint-config": "^4.2.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.13.5",
+    "colorette": "^2.0.20",
     "eslint": "^9.21.0",
+    "execa": "^9.5.2",
+    "fs-extra": "^11.3.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
-    "typescript": "^5.7.3"
+    "type-fest": "^4.35.0",
+    "typescript": "^5.7.3",
+    "zod": "^3.24.2"
   },
   "engines": {
     "node": ">=20"

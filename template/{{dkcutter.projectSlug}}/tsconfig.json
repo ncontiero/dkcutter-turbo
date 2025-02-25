@@ -1,0 +1,3 @@
+{
+  "extends": "@{{dkcutter.projectSlug}}/tsconfig/base.json"
+}

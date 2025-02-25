@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [master, main]
+
+concurrency:
+  group: {% raw %}${{ github.head_ref || github.run_id }}{% endraw %}
+  cancel-in-progress: true
+
+jobs:
+  lint-styles:
+    name: Lint Styles
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+{% if dkcutter.pkgManager == "bun" %}
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v2
+{% else -%}
+{% if dkcutter.pkgManager == "pnpm" %}
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+{% endif %}
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          cache: {{ dkcutter.pkgManager }}
+          node-version-file: .nvmrc
+{% endif %}
+      - name: Install dependencies
+        run: {{ dkcutter._ciInstall }}
+
+      - name: Check code
+{%- if not dkcutter.pkgManager in ["pnpm", "yarn"] %}
+        run: {{ dkcutter.pkgManager }} run check
+{%- else %}
+        run: {{ dkcutter.pkgManager }} check
+{%- endif %}
+  
+  lint-commits:
+    name: Lint Commits
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: wagoid/commitlint-github-action@v6
+        with:
+          configFile: .commitlintrc.json
