@@ -40,6 +40,12 @@ async function main() {
     await updatePackageJson({ projectDir, keys: ["packageManager"] });
   }
 
+  if (CTX.pkgManager === "pnpm") {
+    updatePackageJson({ projectDir, keys: ["workspaces"] });
+  } else {
+    removeFiles(["pnpm-workspace.yaml"]);
+  }
+
   const githubFolder = path.join(projectDir, ".github");
   if (CTX.automatedDepsUpdater === "none") {
     removeFiles([
