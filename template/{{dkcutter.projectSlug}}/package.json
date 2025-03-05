@@ -12,11 +12,12 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "clean": "turbo clean && git clean -xdf .turbo node_modules",
     "eslint": "eslint . --flag unstable_config_lookup_from_file",
-    "lint": "pnpm eslint && turbo lint",
-    "lint:fix": "pnpm eslint --fix && turbo lint:fix",
+    "lint": "{{ dkcutter._pkgRun }} eslint && turbo lint",
+    "lint:fix": "{{ dkcutter._pkgRun }} eslint --fix && turbo lint:fix",
     "typecheck": "turbo typecheck",
-    "check": "pnpm lint && pnpm typecheck",
+    "check": "{{ dkcutter._pkgRun }} lint && {{ dkcutter._pkgRun }} typecheck",
     "prepare": "husky",
     "commitlint": "commitlint --edit",
     "pre-commit": "lint-staged"
@@ -33,6 +34,6 @@
     "typescript": "^5.8.2"
   },
   "lint-staged": {
-    "*": "pnpm eslint --fix"
+    "*": "{{ dkcutter._pkgRun }} eslint --fix"
   }
 }

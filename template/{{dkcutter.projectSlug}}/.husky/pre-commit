@@ -1,1 +1,1 @@
-{{ dkcutter._preCommit }}
+{{ dkcutter._pkgRun }} pre-commit

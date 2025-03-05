@@ -5,6 +5,9 @@
     "build": {
       "dependsOn": ["^build"]
     },
+    "clean": {
+      "dependsOn": ["^clean"]
+    },
     "typecheck": {
       "dependsOn": ["^typecheck"]
     },
