@@ -25,7 +25,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
-    "@dkshs/eslint-config": "^4.5.0",
+    "@dkshs/eslint-config": "^4.5.2",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.13.10",
     "colorette": "^2.0.20",
