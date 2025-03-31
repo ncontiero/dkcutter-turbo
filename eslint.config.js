@@ -1,4 +1,4 @@
-import { dkshs } from "@dkshs/eslint-config";
+import { ncontiero } from "@ncontiero/eslint-config";
 
 const TEMPLATE_GLOB = "template/**/";
 const FILES_TO_IGNORE = [
@@ -11,4 +11,6 @@ function ignoreFiles(files) {
   return files.map((file) => `${TEMPLATE_GLOB}${file}`);
 }
 
-export default dkshs({ ignores: [...(ignoreFiles(FILES_TO_IGNORE) || [])] });
+export default ncontiero({
+  ignores: [...(ignoreFiles(FILES_TO_IGNORE) || [])],
+});

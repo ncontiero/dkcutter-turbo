@@ -6,7 +6,7 @@
   "description": "DKCutter Turbo is a framework for quickly starting projects with Turborepo.",
   "author": {
     "name": "Nicolas Contiero",
-    "url": "https://github.com/dkshs"
+    "url": "https://github.com/ncontiero"
   },
   "license": "MIT",
   "scripts": {
@@ -20,12 +20,12 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "dkcutter": "^4.5.3"
+    "dkcutter": "^4.5.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
-    "@dkshs/eslint-config": "^4.6.0",
+    "@ncontiero/eslint-config": "^5.1.1",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.13.14",
     "colorette": "^2.0.20",

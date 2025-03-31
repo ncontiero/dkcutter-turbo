@@ -1,38 +1,38 @@
 # DKCutter Turbo
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/dkshs/dkcutter-turbo/ci.yml?branch=main)](https://github.com/dkshs/dkcutter-turbo/actions/workflows/ci.yml?query=branch%3Amain)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/ncontiero/dkcutter-turbo/ci.yml?branch=main)](https://github.com/ncontiero/dkcutter-turbo/actions/workflows/ci.yml?query=branch%3Amain)
 [![license mit](https://img.shields.io/badge/licence-MIT-5613B8)](LICENSE)
 
-Powered by [DKCutter](https://github.com/dkshs/dkcutter), DKCutter Turbo is a framework for quickly starting projects with Turborepo.
+Powered by [DKCutter](https://github.com/ncontiero/dkcutter), DKCutter Turbo is a framework for quickly starting projects with Turborepo.
 
-- If you have problems with DKCutter Turbo, please open [issues](https://github.com/dkshs/dkcutter-turbo/issues/new).
+- If you have problems with DKCutter Turbo, please open [issues](https://github.com/ncontiero/dkcutter-turbo/issues/new).
 
 ## Usage
 
-To scaffold an application using [DKCutter](https://github.com/dkshs/dkcutter), run any of the following four commands and answer the command prompt questions:
+To scaffold an application using [DKCutter](https://github.com/ncontiero/dkcutter), run any of the following four commands and answer the command prompt questions:
 
 ### npm
 
 ```bash
-npx dkcutter gh:dkshs/dkcutter-turbo
+npx dkcutter gh:ncontiero/dkcutter-turbo
 ```
 
 ### yarn
 
 ```bash
-yarn dlx dkcutter gh:dkshs/dkcutter-turbo
+yarn dlx dkcutter gh:ncontiero/dkcutter-turbo
 ```
 
 ### pnpm
 
 ```bash
-pnpm dlx dkcutter gh:dkshs/dkcutter-turbo
+pnpm dlx dkcutter gh:ncontiero/dkcutter-turbo
 ```
 
 ### bun
 
 ```bash
-bunx dkcutter@latest gh:dkshs/dkcutter-turbo
+bunx dkcutter@latest gh:ncontiero/dkcutter-turbo
 ```
 
 You'll be prompted for some values. Provide them, then a Monorepo using Turborepo will be created for you.
@@ -45,7 +45,7 @@ Answer the prompts with your own desired [options][options-url]. For example:
 ✔ What is the project name? … My Awesome Project
 ✔ What is the project slug? … my-awesome-project
 ✔ What is the project description? … Behold My Awesome Project!
-✔ What is the author name? … Nicolas Contiero (https://github.com/dkshs)
+✔ What is the author name? … Nicolas Contiero (https://github.com/ncontiero)
 ✔ What Automated Dependency Updater do you want to use? › Mend Renovate
 Using pnpm@10.5.0
 
@@ -82,7 +82,7 @@ If you want to start faster, you can use the following options:
 The following would be the structure of an application with [Renovate](https://github.com/renovatebot/renovate):
 
 ```bash
-pnpm dlx dkcutter@latest gh:dkshs/dkcutter-turbo --automatedDepsUpdater renovate
+pnpm dlx dkcutter@latest gh:ncontiero/dkcutter-turbo --automatedDepsUpdater renovate
 ```
 
 ## License
