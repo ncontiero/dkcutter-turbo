@@ -36,7 +36,7 @@
     "lint-staged": "^15.5.1",
     "type-fest": "^4.40.1",
     "typescript": "^5.8.3",
-    "zod": "^3.24.3"
+    "zod": "^3.24.4"
   },
   "engines": {
     "node": ">=20"
