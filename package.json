@@ -27,7 +27,7 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@ncontiero/eslint-config": "^5.1.1",
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "^22.15.17",
+    "@types/node": "^22.15.18",
     "colorette": "^2.0.20",
     "eslint": "^9.26.0",
     "execa": "^9.5.3",
