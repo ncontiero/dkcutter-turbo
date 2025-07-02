@@ -29,7 +29,7 @@
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.16.0",
     "colorette": "^2.0.20",
-    "eslint": "^9.30.0",
+    "eslint": "^9.30.1",
     "execa": "^9.6.0",
     "fs-extra": "^11.3.0",
     "husky": "^9.1.7",
