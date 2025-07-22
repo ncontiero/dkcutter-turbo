@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       dkcutter:
-        specifier: ^5.0.0
-        version: 5.0.0(chokidar@3.6.0)(typescript@5.8.3)
+        specifier: ^5.0.1
+        version: 5.0.1(chokidar@3.6.0)(typescript@5.8.3)
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.8.1
@@ -1022,8 +1022,8 @@ packages:
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
 
-  dkcutter@5.0.0:
-    resolution: {integrity: sha512-4KX4hHAvN63U/G/s7yddji2LsfLWv7WefnzgEAAMFVvLZJ/7LXcPA+EykLDHfh5nIglkakmdsNedYEqH3KtfKQ==}
+  dkcutter@5.0.1:
+    resolution: {integrity: sha512-LiPTRdjbgD7/9kk+tNQEacFUXwZtW8mOaUxG9/55YLqqlwX5uw34QXY8s8mXQd/Z4rU4nAWN7ILGAakfvof3nQ==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -2678,8 +2678,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  tsx@4.19.4:
-    resolution: {integrity: sha512-gK5GVzDkJK1SI1zwHf32Mqxf2tSJkNx+eYcNly5+nHvWqXUJYUkWBQtKauoESz3ymezAI++ZwT855x5p5eop+Q==}
+  tsx@4.20.3:
+    resolution: {integrity: sha512-qjbnuR9Tr+FJOMBqJCW5ehvIo/buZq7vH7qD7JziU98h6l3qGy0a/yPFjwO+y0/T7GFpNgNAvEcPPVfyT8rrPQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -2845,6 +2845,9 @@ packages:
 
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+
+  zod@4.0.5:
+    resolution: {integrity: sha512-/5UuuRPStvHXu7RS+gmvRf4NXrNxpSllGwDnCBcJZtQsKrviYXm54yDGV2KYNLT5kq0lHGcl7lqWJLgSaG+tgA==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -3856,7 +3859,7 @@ snapshots:
 
   didyoumean@1.2.2: {}
 
-  dkcutter@5.0.0(chokidar@3.6.0)(typescript@5.8.3):
+  dkcutter@5.0.1(chokidar@3.6.0)(typescript@5.8.3):
     dependencies:
       colorette: 2.0.20
       commander: 14.0.0
@@ -3866,9 +3869,9 @@ snapshots:
       nunjucks: 3.2.4(chokidar@3.6.0)
       ora: 8.2.0
       prompts: 2.4.2
-      tsx: 4.19.4
+      tsx: 4.20.3
       which: 5.0.0
-      zod: 3.25.76
+      zod: 4.0.5
     transitivePeerDependencies:
       - chokidar
       - typescript
@@ -5923,10 +5926,10 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tsx@4.19.4:
+  tsx@4.20.3:
     dependencies:
       esbuild: 0.25.2
-      get-tsconfig: 4.10.0
+      get-tsconfig: 4.10.1
     optionalDependencies:
       fsevents: 2.3.3
 
@@ -6150,5 +6153,7 @@ snapshots:
   yoctocolors@2.1.1: {}
 
   zod@3.25.76: {}
+
+  zod@4.0.5: {}
 
   zwitch@2.0.4: {}
