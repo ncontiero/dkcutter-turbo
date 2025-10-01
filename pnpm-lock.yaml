@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       dkcutter:
-        specifier: ^5.0.2
-        version: 5.0.2(chokidar@3.6.0)(typescript@5.9.2)
+        specifier: ^5.0.5
+        version: 5.0.5(chokidar@3.6.0)(typescript@5.9.2)
     devDependencies:
       '@commitlint/cli':
         specifier: ^20.0.0
@@ -1034,8 +1034,8 @@ packages:
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
 
-  dkcutter@5.0.2:
-    resolution: {integrity: sha512-ArPisL10vd9cp8na+CgR/kf/eIyx3WuQ7atuvGnB40EGWWRDoUPpDEgOTgiFsssBx7xGG7s3kRMlMS7V1vEq/g==}
+  dkcutter@5.0.5:
+    resolution: {integrity: sha512-JVZ1v1M5G4gOq84SrmHqW0vMK4hVro6V3QQFF2h8PKU2lwFA65gdtA0ANuoIZDne/H+l2Cf/yD82LjDMZZ0xCg==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -2695,8 +2695,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  tsx@4.20.5:
-    resolution: {integrity: sha512-+wKjMNU9w/EaQayHXb7WA7ZaHY6hN8WgfvHNQ3t1PnU91/7O8TcTnIhCDYTZwnt8JsO9IBqZ30Ln1r7pPF52Aw==}
+  tsx@4.20.6:
+    resolution: {integrity: sha512-ytQKuwgmrrkDTFP4LjR0ToE2nqgy886GpvRSpU0JAnrdBYppuY5rLkRUYPU1yCryb24SsKBTL/hlDQAEFVwtZg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -3885,7 +3885,7 @@ snapshots:
 
   didyoumean@1.2.2: {}
 
-  dkcutter@5.0.2(chokidar@3.6.0)(typescript@5.9.2):
+  dkcutter@5.0.5(chokidar@3.6.0)(typescript@5.9.2):
     dependencies:
       colorette: 2.0.20
       commander: 14.0.1
@@ -3895,7 +3895,7 @@ snapshots:
       nunjucks: 3.2.4(chokidar@3.6.0)
       ora: 9.0.0
       prompts: 2.4.2
-      tsx: 4.20.5
+      tsx: 4.20.6
       which: 5.0.0
       zod: 4.1.11
     transitivePeerDependencies:
@@ -5955,7 +5955,7 @@ snapshots:
   tslib@2.8.1:
     optional: true
 
-  tsx@4.20.5:
+  tsx@4.20.6:
     dependencies:
       esbuild: 0.25.10
       get-tsconfig: 4.10.1
