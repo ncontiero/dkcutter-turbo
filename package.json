@@ -23,7 +23,7 @@
     "dkcutter": "^5.0.5"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.0.0",
+    "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@ncontiero/eslint-config": "^6.2.0",
     "@types/fs-extra": "^11.0.4",
