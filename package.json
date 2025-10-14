@@ -20,7 +20,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "dkcutter": "^5.0.5"
+    "dkcutter": "^5.0.6"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
