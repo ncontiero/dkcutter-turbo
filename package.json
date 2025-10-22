@@ -33,7 +33,7 @@
     "execa": "^9.6.0",
     "fs-extra": "^11.3.2",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.4",
+    "lint-staged": "^16.2.5",
     "type-fest": "^5.1.0",
     "typescript": "^5.9.3",
     "zod": "^4.1.12"
