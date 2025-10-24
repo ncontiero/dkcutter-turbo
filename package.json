@@ -2,7 +2,7 @@
   "name": "dkcutter-turbo",
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "pnpm@10.18.3",
+  "packageManager": "pnpm@10.19.0",
   "description": "DKCutter Turbo is a framework for quickly starting projects with Turborepo.",
   "author": {
     "name": "Nicolas Contiero",
